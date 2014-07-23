@@ -11,8 +11,7 @@ layout: default
       {% if post.category == "Production" %}
         <li>
           <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <!-- <a class="post-link" href="http://pages.registerguard.com/{{ post.slug }}/">{{ post.title }}</a> -->
-          <a class="post-link" href="{{ post.github.repository_url }}">{{ post.title }}</a>
+          <a class="post-link" href="http://pages.registerguard.com/{{ post.slug }}/">{{ post.title }}</a>
           <br>
           <a href="http://github.com/rgpages/{{ post.slug }}/">View on Github</a>.
           <!-- If there is a gif, display that -->
