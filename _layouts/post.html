@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    <!-- Grab the YAML front matter -->
+    {{ content }}
+    <!-- Put front matter content here -->
+    <h2><a href="http://pages.registerguard.com/{{ page.slug }}">Production</a> || <a href="http://github.com/rgpages/{{ page.slug }}">Github</a></h2>
+    <!-- If there is a gif, display that -->
+    {% if page.gif %}
+      <a href="http://pages.registerguard.com/{{ page.slug }}">
+        <img src="/assets/{{ page.gif }}" width="100%" style="border:1px solid black">
+      </a>
+    <!-- Else, display a png that's named with the slug -->
+    {% else %}
+      <a href="http://pages.registerguard.com/{{ page.slug }}">
+        <img src="/assets/{{ page.slug }}.png" width="100%" style="border:1px solid black">
+      </a>
+    {% endif %}
+  </article>
+
+</div>

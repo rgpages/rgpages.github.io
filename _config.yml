@@ -1,0 +1,12 @@
+# Site settings
+title: RG Pages
+email: webeditors@registerguard.com
+description: "Special story online presentations from The Register-Guard web team."
+baseurl: ""
+url: "http://registerguard.com"
+twitter_username: registerguard
+github_username:  registerguard
+
+# Build settings
+markdown: kramdown
+permalink: pretty
