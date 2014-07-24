@@ -14,17 +14,9 @@ layout: default
           <a class="post-link" href="http://pages.registerguard.com/{{ post.slug }}/">{{ post.title }}</a>
           <br>
           <a href="http://github.com/rgpages/{{ post.slug }}/">View on Github</a>.
-          <!-- If there is a gif, display that -->
-          {% if post.gif %}
-            <a href="http://pages.registerguard.com/{{ post.slug }}">
-              <img src="/assets/{{ post.gif }}" width="100%" style="border:1px solid black">
-            </a>
-          <!-- Else, display a png that's named with the slug -->
-          {% else %}
-            <a href="http://pages.registerguard.com/{{ post.slug }}">
-              <img src="/assets/{{ post.slug }}.png" width="100%" style="border:1px solid black">
-            </a>
-          {% endif %}
+          <a href="http://pages.registerguard.com/{{ post.slug }}">
+            <img src="http://pages.registerguard.com/{{ post.slug }}/{{ post.postimage }}" width="100%" style="border:1px solid black">
+          </a>
         </li>
       {% endif %}
     {% endfor %}

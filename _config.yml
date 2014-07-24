@@ -1,3 +1,11 @@
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      postimage: "default.png"
+
 # Site settings
 title: RG Pages
 email: webeditors@registerguard.com
