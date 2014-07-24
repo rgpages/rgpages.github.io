@@ -15,7 +15,11 @@ layout: default
           <br>
           <a href="http://github.com/rgpages/{{ post.slug }}/">View on Github</a>.
           <a href="http://pages.registerguard.com/{{ post.slug }}">
-            <img src="http://pages.registerguard.com/{{ post.slug }}/{{ post.postimage }}" width="100%" style="border:1px solid black">
+            {% if post.postimage %}
+              <img src="http://pages.registerguard.com/{{ post.slug }}/{{ post.postimage }}" width="100%" style="border:1px solid black">
+            {% else %}
+              <img src="http://pages.registerguard.com/{{ post.slug }}/default.png" width="100%" style="border:1px solid black">
+            {% endif %}
           </a>
         </li>
       {% endif %}
